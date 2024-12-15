@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResoBridge - Crowdfunding Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ResoBridge</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore-projects">Explore Projects</a></li>
+                <li><a href="#start-campaign">Start a Campaign</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Support Campus Needs with Crowdfunding</h1>
+            <p>Help raise funds for vital campus resources. Together, we can make a difference!</p>
+            <div class="hero-actions">
+                
+            </div>
+        </section>
+        <section id="explore-projects" class="explore-projects">
+            <h2>Featured Campaigns</h2>
+            <div class="projects-grid" id="featuredProjects">
+                <!-- Project cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="start-campaign" class="start-campaign">
+            <h2>Create Your Campaign</h2>
+            <form id="newCampaignForm">
+                <input type="text" name="title" placeholder="Campaign Title" required>
+                <textarea name="description" placeholder="Describe your campaign" required></textarea>
+                <input type="number" name="goal" placeholder="Funding Goal" required>
+                <input type="date" name="endDate" placeholder="Campaign End Date" required>
+                <button type="submit">Launch Campaign</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="projectDetailsModal" class="modal"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ResoBridge</h3>
+                <p>Connecting dreamers with supporters</p>
+            </div>
+            <div class="footer-section">
+             
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-facebook">Facebook</a>
+                    <a href="#" class="icon-twitter">Twitter</a>
+                    <a href="#" class="icon-instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 ResoBridge. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
